@@ -1,7 +1,15 @@
-<div class="btn btn-success">
-
-<p>Parent</p>
-
-<app-child id="child"  [childMessage]="parentMessage"></app-child>
-
+<div class="container">
+  <div class="card" style="border-radius: 20px">
+    <div style="background-color: aqua; border-radius: 20px">
+      <br />
+      <h4><b>Parent</b></h4>
+      <button class="btn btn-primary" (click)="send()">Send Data to Child</button>
+      <br />
+      <br />
+    </div>
+  </div>
 </div>
+
+<br />
+<br />
+<app-child id="child" [childMessage]="person.name"></app-child>

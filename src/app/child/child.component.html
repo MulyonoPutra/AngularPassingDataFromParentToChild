@@ -1,6 +1,14 @@
-<div class="btn btn-primary">
-
-<p>Child</p>
-Say: {{ childMessage }}
-
+<div class="container">
+  <div class="card" style="border-radius: 20px">
+    <div style="background-color: yellow; border-radius: 20px">
+      <br />
+      <h4><b>Child</b></h4>
+      <span>Receive from Parent:</span>
+      <br />
+      {{ childMessage == null ? 'Data not received!' : childMessage }}
+      <br />
+      <br />
+      <br />
+    </div>
+  </div>
 </div>
